@@ -1,10 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 
+function getTitle(title) {
+  return title;
+}
+
 function App() {
   return (
     <div>
-      <h1>Hello world!</h1>
+      <h1>Hello {getTitle('World')}</h1>
+
+      <label htmlFor="search">Search:</label>
+      <input id="search" type="text"/>
     </div>
   );
 }
